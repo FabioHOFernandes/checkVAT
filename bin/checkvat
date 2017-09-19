@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+const checkvat = require('../index.js');
+
+if (process.argv.length == 1) {
+  return;
+}
+
+let isTest = false;
+if (process.argv.length == 4) {
+  isTest = process.argv[3] == '--test-service';
+}
+
+let VAT = process.argv[2];
+let countryCode = VAT.substring(0, 2);
+let vatNumber = VAT.substring(2, VAT.length);
+
+checkvat(countryCode, vatNumber, isTest).then(result => {
+  console.log(result);
+});
