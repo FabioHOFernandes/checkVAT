@@ -1,6 +1,6 @@
 {
   "name": "checkvat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": " Vaidates given VAT number against European Comission Information Exchange System",
   "main": "index.js",
   "scripts": {
