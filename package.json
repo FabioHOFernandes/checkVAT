@@ -1,0 +1,26 @@
+{
+  "name": "checkvat",
+  "version": "0.0.1",
+  "description": " Vaidates given VAT number against European Comission Information Exchange System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+://github.com/FabioHOFernandes/checkVAT.git"
+  },
+  "keywords": [
+    "VAT",
+    "VIES",
+    "validation"
+  ],
+  "bin": {
+    "checkvat": "./bin/checkvat"
+  },
+  "dependencies": {
+    "soap": "^0.21.0"
+  },
+  "author": "Fabio Fernandes",
+  "license": "ISC"
+}
